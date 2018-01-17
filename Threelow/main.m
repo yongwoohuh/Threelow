@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "Dice.h"
 #import "InputHandler.h"
+#import "GameController.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -18,7 +19,10 @@ int main(int argc, const char * argv[]) {
         Dice *dice3 = [[Dice alloc] init];
         Dice *dice4 = [[Dice alloc] init];
         Dice *dice5 = [[Dice alloc] init];
-    
+        
+        NSArray *throwResult = @[dice1, dice2, dice3, dice4, dice5];
+        NSMutableArray *heldDice = [[NSMutableArray alloc] init];
+        
         while (gameOn)
         {
             NSLog(@"What would you like to do? roll - roll all 5 dice; quit - exit");

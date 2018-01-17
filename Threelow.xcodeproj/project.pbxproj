@@ -10,6 +10,7 @@
 		91424DF2200FCF6400346AB0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 91424DF1200FCF6400346AB0 /* main.m */; };
 		91424DFA200FD04800346AB0 /* Dice.m in Sources */ = {isa = PBXBuildFile; fileRef = 91424DF9200FD04800346AB0 /* Dice.m */; };
 		91424DFD200FD47900346AB0 /* InputHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 91424DFC200FD47900346AB0 /* InputHandler.m */; };
+		91424E03200FE04600346AB0 /* GameController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91424E02200FE04600346AB0 /* GameController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		91424DF9200FD04800346AB0 /* Dice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dice.m; sourceTree = "<group>"; };
 		91424DFB200FD47900346AB0 /* InputHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputHandler.h; sourceTree = "<group>"; };
 		91424DFC200FD47900346AB0 /* InputHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputHandler.m; sourceTree = "<group>"; };
+		91424E01200FE04600346AB0 /* GameController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameController.h; sourceTree = "<group>"; };
+		91424E02200FE04600346AB0 /* GameController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +67,8 @@
 			isa = PBXGroup;
 			children = (
 				91424DF1200FCF6400346AB0 /* main.m */,
+				91424E01200FE04600346AB0 /* GameController.h */,
+				91424E02200FE04600346AB0 /* GameController.m */,
 				91424DF8200FD04800346AB0 /* Dice.h */,
 				91424DF9200FD04800346AB0 /* Dice.m */,
 				91424DFB200FD47900346AB0 /* InputHandler.h */,
@@ -130,6 +135,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				91424DFA200FD04800346AB0 /* Dice.m in Sources */,
+				91424E03200FE04600346AB0 /* GameController.m in Sources */,
 				91424DFD200FD47900346AB0 /* InputHandler.m in Sources */,
 				91424DF2200FCF6400346AB0 /* main.m in Sources */,
 			);
