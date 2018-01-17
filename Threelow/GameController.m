@@ -17,7 +17,6 @@
         _heldDice = [@[@"[]", @"[]", @"[]", @"[]", @"[]"] mutableCopy];
     }
     return self;
-    
 }
 
 - (NSArray *)throwDice
@@ -47,6 +46,11 @@
     }
     [self.heldDice replaceObjectAtIndex:diceIndex withObject:diceValue];
     return self.heldDice;
+}
+
+- (void)resetDice
+{
+    self.heldDice = [@[@"[]", @"[]", @"[]", @"[]", @"[]"] mutableCopy];
 }
 
 @end

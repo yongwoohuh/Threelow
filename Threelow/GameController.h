@@ -16,5 +16,6 @@
 
 - (NSArray *)throwDice;
 - (NSArray *)holdDie:(NSInteger)diceIndex;
+- (void)resetDice;
 
 @end

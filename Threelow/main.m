@@ -34,16 +34,19 @@ int main(int argc, const char * argv[]) {
                 }
                 continue;
             }
-//            if ([userInput isEqualToString:@"reset"]) {
-//
-//            }
-//                continue;
-//            }
+            if ([userInput isEqualToString:@"reset"]) {
+                [gameController resetDice];
+                for (Dice * dice in gameController.heldDice) {
+                    NSLog(@" %lu dice held: %@", [gameController.heldDice indexOfObject:dice] + 1, dice);
+                }
+                continue;
+            }
+
 //            if ([userInput isEqualToString:@"score"]) {
 //
+//             continue;
 //            }
-//                continue;
-//            }
+
             if ([userInput containsString:@"hold"]) {
                 NSArray *inputParse = [userInput componentsSeparatedByString:@" "];
                 if ([inputParse count] != 2) {
