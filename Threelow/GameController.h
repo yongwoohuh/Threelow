@@ -7,10 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Dice.h"
 
 @interface GameController : NSObject
 
-@property (nonatomic) NSArray *throwResult;
+@property (nonatomic) NSMutableArray *throwResult;
 @property (nonatomic) NSMutableArray *heldDice;
+
+- (NSArray *)throwDice;
+- (NSArray *)holdDie:(NSInteger)diceIndex;
 
 @end

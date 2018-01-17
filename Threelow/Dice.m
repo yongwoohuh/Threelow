@@ -14,14 +14,15 @@
 {
     self = [super init];
     if (self) {
-        _diceValues = @[@"Ⅰ", @"Ⅱ", @"Ⅲ", @"Ⅳ", @"Ⅴ", @"Ⅵ"];
+        _value = @"";
     }
     return self;
 }
 
-- (NSString *)roll
+- (void)roll
 {
-    int randomRoll = arc4random_uniform(6);
-    return [self.diceValues objectAtIndex:randomRoll];
+    NSArray *diceFaces = @[@"Ⅰ", @"Ⅱ", @"Ⅲ", @"Ⅳ", @"Ⅴ", @"Ⅵ"];
+    
+   self.value = [diceFaces objectAtIndex:arc4random_uniform(6)];
 }
 @end
